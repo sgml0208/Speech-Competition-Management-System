@@ -7,6 +7,8 @@ project("Speech-Competition-Management-System")
 #设置c++版本
 set(CMAKE_CXX_STANDARD 11)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
+# set(CMAKE_C_COMPILER "D:/Dev-Cpp/mingw64/bin/gcc.exe")
+# set(CMAKE_CXX_COMPILER "D:/Dev-Cpp/mingw64/bin/g++.exe")
 
 # 添加警告调试信息
 add_definitions(-Wall -g)
@@ -16,10 +18,12 @@ include_directories(${PROJECT_SOURCE_DIR}/include)
 
 #添加可执行程序
 add_executable(speech-system 
-        main.cpp 
+        main.cpp
+        src/speechManager.cpp
+        src/speaker.cpp
 ) 
 
-# #把可执行程序链接到库文件上
+# # #把可执行程序链接到库文件上
 # target_link_libraries(main ${库名_LIBRARIES})
 
 
