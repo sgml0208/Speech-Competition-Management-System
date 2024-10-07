@@ -1,0 +1,27 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+      {
+        "name": "C/C++ Runner: Debug Session",
+        "type": "cppdbg",
+        "request": "launch",
+        "args": [],
+        "stopAtEntry": false,
+        "externalConsole": false, // 若想在vscode内调试，设置为false
+        "cwd": "${workspaceFolder}", // 调试程序时的工作目录，一般为${workspaceFolder}即代码所在目录
+        "program": "${workspaceFolder}/build/speech-system.exe", // 指定将要进行调试的程序的路径   专用(好一点)
+        // "program": "${fileDirname}\\${fileBasenameNoExtension}.exe", // 指定将要进行调试的程序的路径   通用(只有与tasks.json g++版的对应才行)
+        "MIMode": "gdb",
+        "miDebuggerPath": "D:\\Dev-Cpp\\mingw64\\bin\\gdb.exe", // miDebugger的路径，注意这里要与MinGw的路径对应
+        // "preLaunchTask"应与tasks.json文件中"label"字段值一致, 作用:若cpp文件有修改，调试时自动先执行tasks.json文件，生成最新的可执行文件，根据最新的.exe文件去调试
+        "preLaunchTask": "Build", // 调试会话开始前执行的任务，一般为编译程序，c++为g++, c为gcc
+        "setupCommands": [
+          {
+            "description": "Enable pretty-printing for gdb",
+            "text": "-enable-pretty-printing",
+            "ignoreFailures": true
+          }
+        ]
+      }
+    ]
+  }

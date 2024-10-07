@@ -1,0 +1,8 @@
+[
+{
+  "directory": "D:/project-practice/learn_C++/CPlusPlus_projects/speech-system/build",
+  "command": "D:\\Dev-Cpp\\mingw64\\bin\\g++.exe  @CMakeFiles/speech-system.dir/includes_CXX.rsp -g -std=gnu++11   -Wall -g -o CMakeFiles\\speech-system.dir\\main.cpp.obj -c D:\\project-practice\\learn_C++\\CPlusPlus_projects\\speech-system\\main.cpp",
+  "file": "D:/project-practice/learn_C++/CPlusPlus_projects/speech-system/main.cpp",
+  "output": "CMakeFiles/speech-system.dir/main.cpp.obj"
+}
+]

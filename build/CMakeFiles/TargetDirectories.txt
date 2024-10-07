@@ -1,0 +1,3 @@
+D:/project-practice/learn_C++/CPlusPlus_projects/speech-system/build/CMakeFiles/speech-system.dir
+D:/project-practice/learn_C++/CPlusPlus_projects/speech-system/build/CMakeFiles/edit_cache.dir
+D:/project-practice/learn_C++/CPlusPlus_projects/speech-system/build/CMakeFiles/rebuild_cache.dir
