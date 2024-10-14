@@ -9,6 +9,8 @@ set(CMAKE_DEPENDS_LANGUAGES
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "D:/project-practice/learn_C++/CPlusPlus_projects/speech-system/main.cpp" "CMakeFiles/speech-system.dir/main.cpp.obj" "gcc" "CMakeFiles/speech-system.dir/main.cpp.obj.d"
+  "D:/project-practice/learn_C++/CPlusPlus_projects/speech-system/src/speaker.cpp" "CMakeFiles/speech-system.dir/src/speaker.cpp.obj" "gcc" "CMakeFiles/speech-system.dir/src/speaker.cpp.obj.d"
+  "D:/project-practice/learn_C++/CPlusPlus_projects/speech-system/src/speechManager.cpp" "CMakeFiles/speech-system.dir/src/speechManager.cpp.obj" "gcc" "CMakeFiles/speech-system.dir/src/speechManager.cpp.obj.d"
   )
 
 # Targets to which this target links which contain Fortran sources.

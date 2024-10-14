@@ -152,6 +152,54 @@ main.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\speech-system.dir\build.make CMakeFiles/speech-system.dir/main.cpp.s
 .PHONY : main.cpp.s
 
+src/speaker.obj: src/speaker.cpp.obj
+.PHONY : src/speaker.obj
+
+# target to build an object file
+src/speaker.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\speech-system.dir\build.make CMakeFiles/speech-system.dir/src/speaker.cpp.obj
+.PHONY : src/speaker.cpp.obj
+
+src/speaker.i: src/speaker.cpp.i
+.PHONY : src/speaker.i
+
+# target to preprocess a source file
+src/speaker.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\speech-system.dir\build.make CMakeFiles/speech-system.dir/src/speaker.cpp.i
+.PHONY : src/speaker.cpp.i
+
+src/speaker.s: src/speaker.cpp.s
+.PHONY : src/speaker.s
+
+# target to generate assembly for a file
+src/speaker.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\speech-system.dir\build.make CMakeFiles/speech-system.dir/src/speaker.cpp.s
+.PHONY : src/speaker.cpp.s
+
+src/speechManager.obj: src/speechManager.cpp.obj
+.PHONY : src/speechManager.obj
+
+# target to build an object file
+src/speechManager.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\speech-system.dir\build.make CMakeFiles/speech-system.dir/src/speechManager.cpp.obj
+.PHONY : src/speechManager.cpp.obj
+
+src/speechManager.i: src/speechManager.cpp.i
+.PHONY : src/speechManager.i
+
+# target to preprocess a source file
+src/speechManager.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\speech-system.dir\build.make CMakeFiles/speech-system.dir/src/speechManager.cpp.i
+.PHONY : src/speechManager.cpp.i
+
+src/speechManager.s: src/speechManager.cpp.s
+.PHONY : src/speechManager.s
+
+# target to generate assembly for a file
+src/speechManager.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\speech-system.dir\build.make CMakeFiles/speech-system.dir/src/speechManager.cpp.s
+.PHONY : src/speechManager.cpp.s
+
 # Help Target
 help:
 	@echo The following are some of the valid targets for this Makefile:
@@ -164,6 +212,12 @@ help:
 	@echo ... main.obj
 	@echo ... main.i
 	@echo ... main.s
+	@echo ... src/speaker.obj
+	@echo ... src/speaker.i
+	@echo ... src/speaker.s
+	@echo ... src/speechManager.obj
+	@echo ... src/speechManager.i
+	@echo ... src/speechManager.s
 .PHONY : help
 
 

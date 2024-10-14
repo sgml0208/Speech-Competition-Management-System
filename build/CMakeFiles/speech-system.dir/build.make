@@ -83,19 +83,53 @@ CMakeFiles/speech-system.dir/main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/speech-system.dir/main.cpp.s"
 	D:\Dev-Cpp\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:\project-practice\learn_C++\CPlusPlus_projects\speech-system\main.cpp -o CMakeFiles\speech-system.dir\main.cpp.s
 
+CMakeFiles/speech-system.dir/src/speechManager.cpp.obj: CMakeFiles/speech-system.dir/flags.make
+CMakeFiles/speech-system.dir/src/speechManager.cpp.obj: CMakeFiles/speech-system.dir/includes_CXX.rsp
+CMakeFiles/speech-system.dir/src/speechManager.cpp.obj: D:/project-practice/learn_C++/CPlusPlus_projects/speech-system/src/speechManager.cpp
+CMakeFiles/speech-system.dir/src/speechManager.cpp.obj: CMakeFiles/speech-system.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\project-practice\learn_C++\CPlusPlus_projects\speech-system\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/speech-system.dir/src/speechManager.cpp.obj"
+	D:\Dev-Cpp\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/speech-system.dir/src/speechManager.cpp.obj -MF CMakeFiles\speech-system.dir\src\speechManager.cpp.obj.d -o CMakeFiles\speech-system.dir\src\speechManager.cpp.obj -c D:\project-practice\learn_C++\CPlusPlus_projects\speech-system\src\speechManager.cpp
+
+CMakeFiles/speech-system.dir/src/speechManager.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/speech-system.dir/src/speechManager.cpp.i"
+	D:\Dev-Cpp\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E D:\project-practice\learn_C++\CPlusPlus_projects\speech-system\src\speechManager.cpp > CMakeFiles\speech-system.dir\src\speechManager.cpp.i
+
+CMakeFiles/speech-system.dir/src/speechManager.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/speech-system.dir/src/speechManager.cpp.s"
+	D:\Dev-Cpp\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:\project-practice\learn_C++\CPlusPlus_projects\speech-system\src\speechManager.cpp -o CMakeFiles\speech-system.dir\src\speechManager.cpp.s
+
+CMakeFiles/speech-system.dir/src/speaker.cpp.obj: CMakeFiles/speech-system.dir/flags.make
+CMakeFiles/speech-system.dir/src/speaker.cpp.obj: CMakeFiles/speech-system.dir/includes_CXX.rsp
+CMakeFiles/speech-system.dir/src/speaker.cpp.obj: D:/project-practice/learn_C++/CPlusPlus_projects/speech-system/src/speaker.cpp
+CMakeFiles/speech-system.dir/src/speaker.cpp.obj: CMakeFiles/speech-system.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\project-practice\learn_C++\CPlusPlus_projects\speech-system\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/speech-system.dir/src/speaker.cpp.obj"
+	D:\Dev-Cpp\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/speech-system.dir/src/speaker.cpp.obj -MF CMakeFiles\speech-system.dir\src\speaker.cpp.obj.d -o CMakeFiles\speech-system.dir\src\speaker.cpp.obj -c D:\project-practice\learn_C++\CPlusPlus_projects\speech-system\src\speaker.cpp
+
+CMakeFiles/speech-system.dir/src/speaker.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/speech-system.dir/src/speaker.cpp.i"
+	D:\Dev-Cpp\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E D:\project-practice\learn_C++\CPlusPlus_projects\speech-system\src\speaker.cpp > CMakeFiles\speech-system.dir\src\speaker.cpp.i
+
+CMakeFiles/speech-system.dir/src/speaker.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/speech-system.dir/src/speaker.cpp.s"
+	D:\Dev-Cpp\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:\project-practice\learn_C++\CPlusPlus_projects\speech-system\src\speaker.cpp -o CMakeFiles\speech-system.dir\src\speaker.cpp.s
+
 # Object files for target speech-system
 speech__system_OBJECTS = \
-"CMakeFiles/speech-system.dir/main.cpp.obj"
+"CMakeFiles/speech-system.dir/main.cpp.obj" \
+"CMakeFiles/speech-system.dir/src/speechManager.cpp.obj" \
+"CMakeFiles/speech-system.dir/src/speaker.cpp.obj"
 
 # External object files for target speech-system
 speech__system_EXTERNAL_OBJECTS =
 
 speech-system.exe: CMakeFiles/speech-system.dir/main.cpp.obj
+speech-system.exe: CMakeFiles/speech-system.dir/src/speechManager.cpp.obj
+speech-system.exe: CMakeFiles/speech-system.dir/src/speaker.cpp.obj
 speech-system.exe: CMakeFiles/speech-system.dir/build.make
 speech-system.exe: CMakeFiles/speech-system.dir/linkLibs.rsp
 speech-system.exe: CMakeFiles/speech-system.dir/objects1.rsp
 speech-system.exe: CMakeFiles/speech-system.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=D:\project-practice\learn_C++\CPlusPlus_projects\speech-system\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable speech-system.exe"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=D:\project-practice\learn_C++\CPlusPlus_projects\speech-system\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Linking CXX executable speech-system.exe"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles\speech-system.dir\link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
