@@ -1,0 +1,11 @@
+{
+    "configurations": [
+        {
+            "includePath": [
+                "${workspaceFolder}/include", // 添加这一行
+                "${workspaceFolder}/**"
+            ]
+        }
+    ],
+    "version": 4
+}

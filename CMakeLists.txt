@@ -1,14 +1,14 @@
 #声明要求的cmake最低版本
 cmake_minimum_required(VERSION 3.26)   # C:\Program Files\cmake-3.26.0-rc5-windows-x86_64\bin\cmake.exe
 
-#声明一个cmake工程
-project("Speech-Competition-Management-System")
-
 #设置c++版本
 set(CMAKE_CXX_STANDARD 11)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
-# set(CMAKE_C_COMPILER "D:/Dev-Cpp/mingw64/bin/gcc.exe")
-# set(CMAKE_CXX_COMPILER "D:/Dev-Cpp/mingw64/bin/g++.exe")
+set(CMAKE_C_COMPILER "D:/Dev-Cpp/mingw64/bin/gcc.exe")
+set(CMAKE_CXX_COMPILER "D:/Dev-Cpp/mingw64/bin/g++.exe")
+
+#声明一个cmake工程
+project(SpeechSystem)
 
 # 添加警告调试信息
 add_definitions(-Wall -g)
@@ -21,9 +21,9 @@ add_executable(speech-system
         main.cpp
         src/speechManager.cpp
         src/speaker.cpp
-) 
+)
 
-# # #把可执行程序链接到库文件上
+# # 把可执行程序链接到库文件上
 # target_link_libraries(main ${库名_LIBRARIES})
 
 

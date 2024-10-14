@@ -3,7 +3,7 @@
  * @Author:  shang guan meng luo
  * @version:
  * @Date: 2024-10-07 14:46:33
- * @LastEditTime: 2024-10-07 22:27:43
+ * @LastEditTime: 2024-10-14 18:00:04
  */
 
 /*
@@ -31,6 +31,7 @@
 
 #include "speechManager.h"
 #include <iostream>
+#include <ctime>
 #include <windows.h>
 using namespace std;
 
@@ -38,6 +39,9 @@ int main(int argc, char *argv[])
 {
     // 在Windows系统中，控制台默认使用的是系统本地编码（通常是GBK或GB2312），而源代码是使用UTF-8编码保存的，这会导致在控制台输出时出现乱码
     SetConsoleOutputCP(65001); // 设置控制台输出编码为UTF-8
+
+    // 随机数种子
+    srand((unsigned int)time(NULL));
 
     SpeechManager sm; // 创建对象
 
@@ -47,9 +51,9 @@ int main(int argc, char *argv[])
         // 展示菜单
         sm.showMenu();
 
-        // 测试代码
-        for (map<int, Speaker>::iterator it = sm.m_speaker.begin(); it != sm.m_speaker.end(); it++)
-            cout << "Player's ID: " << it->first << "\tPlay's name: " << it->second.m_name << "\tPlay's score: " << it->second.m_score[0] << endl;
+        // // 测试代码
+        // for (map<int, Speaker>::iterator it = sm.m_speaker.begin(); it != sm.m_speaker.end(); it++)
+        //     cout << "Player's ID: " << it->first << "\tPlay's name: " << it->second.m_name << "\tPlay's score: " << it->second.m_score[0] << endl;
 
         cout << endl
              << "Please input your choice:  ";
@@ -60,10 +64,13 @@ int main(int argc, char *argv[])
             sm.exitSystem();
             return 0;
         case 1: // 开始演讲比赛
+            sm.controlSpeech();
             break;
         case 2: // 查看往届记录
+            sm.showRecord();
             break;
         case 3: // 清空比赛记录
+            sm.clearRecord();
             break;
         default:
             system("cls"); // windows系统的清屏  Unix-like系统(如Linux或macOS)是system("clear");
